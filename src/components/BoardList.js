@@ -29,7 +29,7 @@ const BoardList = ({ setModify }) => {
 	const [checkList, setChecklist] = useState([]);
 
 	const getList = useCallback(() => {
-		axios.get('http://localhost:8000/list')
+		axios.get('http://34.64.253.101:8000/list')
 			.then((res) => {
 				// 성공 핸들링
 				console.log(res.data);
@@ -71,7 +71,7 @@ const BoardList = ({ setModify }) => {
 		let boardIDList = checkList.join(); //[1,2,3]->1,2,3
 		console.log(boardIDList);
 
-		axios.post('http://localhost:8000/delete',{boardIDList})
+		axios.post('http://34.64.253.101:8000/delete',{boardIDList})
     .then( (res)=> {
       // 성공 핸들링
       alert('삭제 완료');

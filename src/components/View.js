@@ -15,7 +15,7 @@ const View = () => {
 	console.log(id);
 
 	useEffect(() => {
-		axios.get(`http://localhost:8000/detail?id=${id}`)
+		axios.get(`http://34.64.253.101:8000/detail?id=${id}`)
 			.then((res) => {
 				// 성공 핸들링
 				console.log(res.data);
