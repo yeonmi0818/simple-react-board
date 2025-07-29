@@ -44,9 +44,10 @@ const View = () => {
 				/* 이미지 있을 때 출력 */
 			}
 			{board.image_path && "attachment"
+				(
 				<div >
-					<img src="" alt="">
-				</div>
+					<img src="" alt=""/>
+				</div>)
 			}
 			<hr />
 			<Link to="/" className="btn btn-secondary">목록</Link>
